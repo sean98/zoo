@@ -1,6 +1,8 @@
 using System;
 using System.Linq;
+using System.Reflection;
 using Zoo.Animals;
+using Zoo.Utils;
 
 namespace Zoo
 {
@@ -20,11 +22,10 @@ namespace Zoo
                 Console.WriteLine("Too many arguments provided");
             else
             {
-                var animalFactory = new AnimalFactory();
                 var filePath = args[0];
 
                 GetAnimalsNamesFromFile(filePath)
-                    .Select(name => animalFactory.generateAnimal(name))
+                    .Select(AnimalFactory.GenerateAnimal)
                     .ToList().ForEach(animal => {
                         animal.PrintName();
                         animal.PrintSound();
