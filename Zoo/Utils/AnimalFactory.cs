@@ -24,7 +24,7 @@ namespace Zoo.Utils
             {
                 throw new ArgumentException(
                     $"'{animalName}' is not a supported animal name, currently supported: " +
-                    String.Join(", ", Classes.Select(animal => animal.Name)));
+                    string.Join(", ", Classes.Select(animal => animal.Name)));
             }
         }
     }
