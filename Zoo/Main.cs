@@ -1,6 +1,6 @@
 using System;
 using System.Linq;
-using Zoo.animals;
+using Zoo.Animals;
 
 namespace Zoo
 {
@@ -26,8 +26,8 @@ namespace Zoo
                 GetAnimalsNamesFromFile(filePath)
                     .Select(name => animalFactory.generateAnimal(name))
                     .ToList().ForEach(animal => {
-                        animal.printName();
-                        animal.printSound();
+                        animal.PrintName();
+                        animal.PrintSound();
                     });
             }
         }

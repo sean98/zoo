@@ -43,17 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="animals\Animal.cs" />
-    <Compile Include="animals\AnimalFactory.cs" />
-    <Compile Include="animals\Cat.cs" />
-    <Compile Include="animals\Dog.cs" />
-    <Compile Include="animals\Duck.cs" />
+    <Compile Include="Animals\Animal.cs" />
+    <Compile Include="Animals\AnimalFactory.cs" />
+    <Compile Include="Animals\Cat.cs" />
+    <Compile Include="Animals\Dog.cs" />
+    <Compile Include="Animals\Duck.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="animlas.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\animlas.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

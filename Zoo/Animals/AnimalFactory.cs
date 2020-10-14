@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Zoo.animals
+namespace Zoo.Animals
 {
     class AnimalFactory
     {
