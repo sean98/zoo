@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Zoo.Animals
+﻿namespace Zoo.Animals
 {
     class Dog : Animal
     {
